@@ -1,0 +1,5 @@
+* source PNPBJT1
+R_RB         N00220 VB  100k TC=0,0 
+V_VBB         N00220 0 2V
+V_VCE         N00188 0 4V
+Q_Q1         N00188 VB 0 Q2N3904

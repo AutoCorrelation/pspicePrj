@@ -1,0 +1,7 @@
+* source CLIPPER1
+V_VB         0 N002811 {VB}
+R_R1         VS VO  1k TC=0,0 
+V_V1         VS 0  
++SIN 0 5V 1kHz 0 0 0
+D_D1         N002811 VO D1N4004 
+.PARAM  vb=1v

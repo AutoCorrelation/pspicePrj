@@ -1,0 +1,8 @@
+.ALIASES
+V_VB            VB(+=N01494 -=0 ) CN @CLIPPER2.SCHEMATIC1(sch_1):I00281@SOURCE.VDC.Normal(chips)
+R_R1            R1(1=N01494 2=VO ) CN @CLIPPER2.SCHEMATIC1(sch_1):INS483@ANALOG.R.Normal(chips)
+V_V1            V1(+=VS -=0 ) CN @CLIPPER2.SCHEMATIC1(sch_1):INS514@SOURCE.VSIN.Normal(chips)
+D_D1            D1(1=VO 2=VS ) CN @CLIPPER2.SCHEMATIC1(sch_1):INS1819@DIODE.D1N4004.Normal(chips)
+_    _(Vo=VO)
+_    _(Vs=VS)
+.ENDALIASES

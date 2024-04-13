@@ -1,0 +1,275 @@
+
+**** 04/04/24 09:49:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Clipper1"  [ c:\cadence\mjproj\clipper2-pspicefiles\schematic1\clipper1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Clipper1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\myhom\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 4ms 0 1us 
+.STEP LIN V_VB 0V 5V 1V 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source CLIPPER2
+V_VB         N01494 0 {VB}
+R_R1         N01494 VO  1k TC=0,0 
+V_V1         VS 0  
++SIN 0 5V 1kHz 0 0 0
+D_D1         VO VS D1N4004 
+.PARAM  vb=1v
+
+**** RESUMING Clipper1.cir ****
+.END
+
+**** 04/04/24 09:49:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Clipper1"  [ c:\cadence\mjproj\clipper2-pspicefiles\schematic1\clipper1.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4004         D1N4001         
+          IS   14.110000E-09   14.110000E-09 
+           N    1.984           1.984        
+         IKF   94.81           94.81         
+          BV  600              75            
+         IBV   10.000000E-06   10.000000E-06 
+          RS     .03389          .03389      
+          TT    5.700000E-06    5.700000E-06 
+         CJO   25.890000E-12   25.890000E-12 
+          VJ     .3245           .3245       
+           M     .44             .44         
+
+
+**** 04/04/24 09:49:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Clipper1"  [ c:\cadence\mjproj\clipper2-pspicefiles\schematic1\clipper1.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_VB =    0     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VO) 24.23E-21  (   VS)    0.0000  (N01494)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VB         2.423E-23
+    V_V1        -2.423E-23
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 04/04/24 09:49:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Clipper1"  [ c:\cadence\mjproj\clipper2-pspicefiles\schematic1\clipper1.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_VB =    1     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VO)     .5340  (   VS)    0.0000  (N01494)    1.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VB        -4.660E-04
+    V_V1         4.660E-04
+
+    TOTAL POWER DISSIPATION   4.66E-04  WATTS
+
+
+**** 04/04/24 09:49:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Clipper1"  [ c:\cadence\mjproj\clipper2-pspicefiles\schematic1\clipper1.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_VB =    2     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VO)     .5908  (   VS)    0.0000  (N01494)    2.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VB        -1.409E-03
+    V_V1         1.409E-03
+
+    TOTAL POWER DISSIPATION   2.82E-03  WATTS
+
+
+**** 04/04/24 09:49:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Clipper1"  [ c:\cadence\mjproj\clipper2-pspicefiles\schematic1\clipper1.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_VB =    3     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VO)     .6177  (   VS)    0.0000  (N01494)    3.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VB        -2.382E-03
+    V_V1         2.382E-03
+
+    TOTAL POWER DISSIPATION   7.15E-03  WATTS
+
+
+**** 04/04/24 09:49:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Clipper1"  [ c:\cadence\mjproj\clipper2-pspicefiles\schematic1\clipper1.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_VB =    4     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VO)     .6355  (   VS)    0.0000  (N01494)    4.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VB        -3.365E-03
+    V_V1         3.365E-03
+
+    TOTAL POWER DISSIPATION   1.35E-02  WATTS
+
+
+**** 04/04/24 09:49:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Clipper1"  [ c:\cadence\mjproj\clipper2-pspicefiles\schematic1\clipper1.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_VB =    5     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VO)     .6487  (   VS)    0.0000  (N01494)    5.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VB        -4.351E-03
+    V_V1         4.351E-03
+
+    TOTAL POWER DISSIPATION   2.18E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/04/24 09:49:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Clipper1"  [ c:\cadence\mjproj\clipper2-pspicefiles\schematic1\clipper1.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     V_VB =    5     
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .24
+

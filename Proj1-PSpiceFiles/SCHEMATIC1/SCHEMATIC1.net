@@ -1,0 +1,6 @@
+* source PROJ1
+V_V1         N00106 0 18Vdc
+R_R1         N00106 N00616  5 TC=0,0 
+V_V2         N00616 0 5Vdc
+R_R2         0 N00106  1 TC=0,0 
+R_R3         0 N00106  6 TC=0,0 

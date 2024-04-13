@@ -1,0 +1,5 @@
+* source NPNBJT2
+V_VCE         N00503 0 4V
+Q_Q1         N00503 VB 0 Q2N3904
+V_VBB         N00565 0 2V
+R_RB         N00565 VB  100k TC=0,0 

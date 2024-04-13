@@ -1,0 +1,272 @@
+
+**** 03/21/24 14:46:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-recitifier2"  [ c:\cadence\mjproj\rectifier2-pspicefiles\schematic1\recitifier2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "recitifier2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\myhom\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 60ms 0 1us 
+.STEP PARAM Cvar LIST 10uF, 22uF, 33uF, 47uF, 56uF 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source RECTIFIER2
+R_R1         VOUT 0  1k TC=0,0 
+D_D1         VA VOUT D1N4004 
+V_V1         VIN 0  
++SIN 0 10V 60Hz 0 0 0
+D_D2         VB VOUT D1N4004 
+C_C1         0 VOUT  {Cvar}  TC=0,0 
+X_TX1         VIN 0 VA 0 VB XFRM_LIN/CT-SEC PARAMS:  LP_VALUE=20MH
++  LS1_VALUE=10MH LS2_VALUE=10MH COUPLING=.99 RP_VALUE=0.1 RS_VALUE=0.1
+.PARAM  cvar=10uf
+
+**** RESUMING recitifier2.cir ****
+.END
+
+**** 03/21/24 14:46:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-recitifier2"  [ c:\cadence\mjproj\rectifier2-pspicefiles\schematic1\recitifier2.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4004         D1N4001         
+          IS   14.110000E-09   14.110000E-09 
+           N    1.984           1.984        
+         IKF   94.81           94.81         
+          BV  600              75            
+         IBV   10.000000E-06   10.000000E-06 
+          RS     .03389          .03389      
+          TT    5.700000E-06    5.700000E-06 
+         CJO   25.890000E-12   25.890000E-12 
+          VJ     .3245           .3245       
+           M     .44             .44         
+
+
+**** 03/21/24 14:46:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-recitifier2"  [ c:\cadence\mjproj\rectifier2-pspicefiles\schematic1\recitifier2.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =   10.0000E-06
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VA) 38.47E-27  (   VB) 38.47E-27  (  VIN)    0.0000  ( VOUT)-1.539E-21      
+
+(X_TX1.2)    0.0000                   (X_TX1.7)    0.0000                       
+
+(X_TX1.8)    0.0000                   (X_TX1.9)    0.0000                       
+
+(X_TX1.10)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 03/21/24 14:46:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-recitifier2"  [ c:\cadence\mjproj\rectifier2-pspicefiles\schematic1\recitifier2.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =   22.0000E-06
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VA) 38.47E-27  (   VB) 38.47E-27  (  VIN)    0.0000  ( VOUT)-1.539E-21      
+
+(X_TX1.2)    0.0000                   (X_TX1.7)    0.0000                       
+
+(X_TX1.8)    0.0000                   (X_TX1.9)    0.0000                       
+
+(X_TX1.10)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 03/21/24 14:46:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-recitifier2"  [ c:\cadence\mjproj\rectifier2-pspicefiles\schematic1\recitifier2.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =   33.0000E-06
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VA) 38.47E-27  (   VB) 38.47E-27  (  VIN)    0.0000  ( VOUT)-1.539E-21      
+
+(X_TX1.2)    0.0000                   (X_TX1.7)    0.0000                       
+
+(X_TX1.8)    0.0000                   (X_TX1.9)    0.0000                       
+
+(X_TX1.10)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 03/21/24 14:46:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-recitifier2"  [ c:\cadence\mjproj\rectifier2-pspicefiles\schematic1\recitifier2.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =   47.0000E-06
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VA) 38.47E-27  (   VB) 38.47E-27  (  VIN)    0.0000  ( VOUT)-1.539E-21      
+
+(X_TX1.2)    0.0000                   (X_TX1.7)    0.0000                       
+
+(X_TX1.8)    0.0000                   (X_TX1.9)    0.0000                       
+
+(X_TX1.10)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 03/21/24 14:46:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-recitifier2"  [ c:\cadence\mjproj\rectifier2-pspicefiles\schematic1\recitifier2.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CVAR =   56.0000E-06
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VA) 38.47E-27  (   VB) 38.47E-27  (  VIN)    0.0000  ( VOUT)-1.539E-21      
+
+(X_TX1.2)    0.0000                   (X_TX1.7)    0.0000                       
+
+(X_TX1.8)    0.0000                   (X_TX1.9)    0.0000                       
+
+(X_TX1.10)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 03/21/24 14:46:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-recitifier2"  [ c:\cadence\mjproj\rectifier2-pspicefiles\schematic1\recitifier2.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM CVAR =   56.0000E-06
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        3.88
+

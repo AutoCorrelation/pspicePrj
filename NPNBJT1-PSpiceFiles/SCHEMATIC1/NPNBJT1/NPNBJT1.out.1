@@ -1,0 +1,44 @@
+
+**** 04/03/24 21:01:43 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-NPNBJT1"  [ C:\Cadence\MjProj\NPNBJT1-PSpiceFiles\SCHEMATIC1\NPNBJT1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "NPNBJT1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\myhom\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V_VCE 0V 6V 0.05V 
++ LIN V_VBB 2V 2V 0 
+------------------$
+ERROR(ORPSIM-16069): Invalid increment
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source NPNBJT1
+R_RB         N00220 VB  100k TC=0,0 
+V_VBB         N00220 0 1V
+V_VCE         N00188 0 1V
+Q_Q2         N00188 VB 0 Q2N3904
+
+**** RESUMING NPNBJT1.cir ****
+.END
+
