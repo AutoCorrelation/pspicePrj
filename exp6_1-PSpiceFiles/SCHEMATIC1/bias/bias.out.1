@@ -1,0 +1,50 @@
+
+**** 04/27/24 14:43:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\user\Desktop\Codespace\pspicePrj\exp6_1-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OP
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EXP6_1
+Q_Q1         N15216 N14388 N14138 Q2N4401
+V_V1         N14441 N14138 0Vdc
+R_R1         N14388 N14441  1k TC=0,0 
+R_R2         N14138 N14388  1k TC=0,0 
+R_R3         N15216 N14441  1k TC=0,0 
+
+**** RESUMING bias.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N15216 is floating
+
+ERROR(ORPSIM-15142): Node N14388 is floating
+
+ERROR(ORPSIM-15142): Node N14138 is floating
+
+ERROR(ORPSIM-15142): Node N14441 is floating
+

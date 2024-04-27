@@ -1,0 +1,181 @@
+
+**** 04/28/24 01:58:33 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exp6_1"  [ c:\users\user\desktop\codespace\pspiceprj\exp6_1-pspicefiles\schematic1\exp6_1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "exp6_1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OP
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EXP6_1
+Q_Q1         N15216 N14388 0 Q2N4401
+V_V1         N14441 0 10V
+R_R1         N14388 N14441  220k TC=0,0 
+R_R2         0 N14388  39k TC=0,0 
+R_R3         N15216 N14441  2.7k TC=0,0 
+Q_Q2         N16850 N16856 N17152 Q2N4401
+R_R5         N16856 N16788  220k TC=0,0 
+R_R4         N16850 N16788  1.8k TC=0,0 
+V_V2         N16788 0 10V
+R_R6         0 N16856  39k TC=0,0 
+R_R7         0 N17152  1.8k TC=0,0 
+
+**** RESUMING exp6_1.cir ****
+.END
+
+**** 04/28/24 01:58:33 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exp6_1"  [ c:\users\user\desktop\codespace\pspiceprj\exp6_1-pspicefiles\schematic1\exp6_1.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N4401         
+               NPN             
+       LEVEL    1            
+          IS   26.030000E-15 
+          BF  378.9          
+          NF    1            
+         VAF   90.7          
+         IKF     .3656       
+         ISE  183.000000E-15 
+          NE    1.433        
+          BR    1.01         
+          NR    1            
+         VAR  100            
+         ISS    0            
+          RE    0            
+          RC     .5          
+         CJE   24.070000E-12 
+         VJE     .75         
+         MJE     .3641       
+         CJC   11.010000E-12 
+         VJC     .75         
+         MJC     .3763       
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  466.500000E-12 
+          TR  233.700000E-09 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 04/28/24 01:58:33 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exp6_1"  [ c:\users\user\desktop\codespace\pspiceprj\exp6_1-pspicefiles\schematic1\exp6_1.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N14388)     .6644 (N14441)   10.0000 (N15216)     .1760 (N16788)   10.0000     
+
+(N16850)    9.2202 (N16856)    1.3927 (N17152)     .7859 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.681E-03
+    V_V2        -4.723E-04
+
+    TOTAL POWER DISSIPATION   4.15E-02  WATTS
+
+
+**** 04/28/24 01:58:33 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exp6_1"  [ c:\users\user\desktop\codespace\pspiceprj\exp6_1-pspicefiles\schematic1\exp6_1.sim ] 
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         Q_Q1        Q_Q2      
+MODEL        Q2N4401     Q2N4401   
+IB           2.54E-05    3.42E-06 
+IC           3.64E-03    4.33E-04 
+VBE          6.64E-01    6.07E-01 
+VBC          4.88E-01   -7.83E+00 
+VCE          1.76E-01    8.43E+00 
+BETADC       1.43E+02    1.27E+02 
+GM           1.39E-01    1.67E-02 
+RPI          1.47E+03    9.57E+03 
+RX           0.00E+00    0.00E+00 
+RO           4.79E+03    2.26E+05 
+CBE          1.05E-10    4.58E-11 
+CBC          5.61E-11    4.40E-12 
+CJS          0.00E+00    0.00E+00 
+BETAAC       2.04E+02    1.60E+02 
+CBX/CBX2     0.00E+00    0.00E+00 
+FT/FT2       1.38E+08    5.31E+07 
+
+
+
+          JOB CONCLUDED
+
+**** 04/28/24 01:58:33 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exp6_1"  [ c:\users\user\desktop\codespace\pspiceprj\exp6_1-pspicefiles\schematic1\exp6_1.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+
