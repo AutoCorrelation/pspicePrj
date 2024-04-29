@@ -513,7 +513,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"2.386mW")
+                    ("value"	"6.196mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("COMPONENT"
@@ -528,12 +528,12 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"220k")
+                    ("value"	"100k")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"334.1uW")
+                    ("value"	"589.5uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"
@@ -586,7 +586,7 @@
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"136.1uW")
+                    ("value"	"1.574mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"
@@ -638,7 +638,7 @@
                     ("pspice_param"	"DC")
                 )
                 ("BiasValue Power"
-                    ("value"	"-3.139mW")
+                    ("value"	"-10.12mW")
                     ("pspice_param"	"BiasValue Power")
                 )
             )
@@ -649,12 +649,12 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"39k")
+                    ("value"	"33k")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"52.21uW")
+                    ("value"	"163.4uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"
@@ -702,12 +702,12 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"1.8k")
+                    ("value"	"0.2k")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"230.7uW")
+                    ("value"	"1.596mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"

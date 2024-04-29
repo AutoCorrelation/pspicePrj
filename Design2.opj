@@ -29,4 +29,6 @@
         (Occurrence "/"))
       (Path "C:\USERS\USER\DESKTOP\CODESPACE\PSPICEPRJ\DESIGN2.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "PAGE1"))))
+      (Page "PAGE1")))
+  (MPSSessionName "user")
+  (PartMRUSelector))

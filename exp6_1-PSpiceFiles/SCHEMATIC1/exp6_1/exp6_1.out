@@ -1,5 +1,5 @@
-
-**** 04/28/24 01:58:33 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+**** 04/28/24 22:49:41 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-exp6_1"  [ c:\users\user\desktop\codespace\pspiceprj\exp6_1-pspicefiles\schematic1\exp6_1.sim ] 
 
@@ -37,16 +37,16 @@ R_R1         N14388 N14441  220k TC=0,0
 R_R2         0 N14388  39k TC=0,0 
 R_R3         N15216 N14441  2.7k TC=0,0 
 Q_Q2         N16850 N16856 N17152 Q2N4401
-R_R5         N16856 N16788  220k TC=0,0 
+R_R5         N16856 N16788  100k TC=0,0 
 R_R4         N16850 N16788  1.8k TC=0,0 
 V_V2         N16788 0 10V
-R_R6         0 N16856  39k TC=0,0 
-R_R7         0 N17152  1.8k TC=0,0 
+R_R6         0 N16856  33k TC=0,0 
+R_R7         0 N17152  0.2k TC=0,0 
 
 **** RESUMING exp6_1.cir ****
 .END
 
-**** 04/28/24 01:58:33 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 04/28/24 22:49:41 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-exp6_1"  [ c:\users\user\desktop\codespace\pspiceprj\exp6_1-pspicefiles\schematic1\exp6_1.sim ] 
 
@@ -93,7 +93,7 @@ R_R7         0 N17152  1.8k TC=0,0
            D     .87         
 
 
-**** 04/28/24 01:58:33 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 04/28/24 22:49:41 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-exp6_1"  [ c:\users\user\desktop\codespace\pspiceprj\exp6_1-pspicefiles\schematic1\exp6_1.sim ] 
 
@@ -110,7 +110,7 @@ R_R7         0 N17152  1.8k TC=0,0
 
 (N14388)     .6644 (N14441)   10.0000 (N15216)     .1760 (N16788)   10.0000     
 
-(N16850)    9.2202 (N16856)    1.3927 (N17152)     .7859 
+(N16850)    1.1649 (N16856)    1.6605 (N17152)     .9883 
 
 
 
@@ -119,12 +119,12 @@ R_R7         0 N17152  1.8k TC=0,0
     NAME         CURRENT
 
     V_V1        -3.681E-03
-    V_V2        -4.723E-04
+    V_V2        -4.992E-03
 
-    TOTAL POWER DISSIPATION   4.15E-02  WATTS
+    TOTAL POWER DISSIPATION   8.67E-02  WATTS
 
 
-**** 04/28/24 01:58:33 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 04/28/24 22:49:41 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-exp6_1"  [ c:\users\user\desktop\codespace\pspiceprj\exp6_1-pspicefiles\schematic1\exp6_1.sim ] 
 
@@ -144,28 +144,28 @@ R_R7         0 N17152  1.8k TC=0,0
 
 NAME         Q_Q1        Q_Q2      
 MODEL        Q2N4401     Q2N4401   
-IB           2.54E-05    3.42E-06 
-IC           3.64E-03    4.33E-04 
-VBE          6.64E-01    6.07E-01 
-VBC          4.88E-01   -7.83E+00 
-VCE          1.76E-01    8.43E+00 
-BETADC       1.43E+02    1.27E+02 
-GM           1.39E-01    1.67E-02 
-RPI          1.47E+03    9.57E+03 
+IB           2.54E-05    3.31E-05 
+IC           3.64E-03    4.91E-03 
+VBE          6.64E-01    6.72E-01 
+VBC          4.88E-01    4.96E-01 
+VCE          1.76E-01    1.77E-01 
+BETADC       1.43E+02    1.48E+02 
+GM           1.39E-01    1.87E-01 
+RPI          1.47E+03    1.13E+03 
 RX           0.00E+00    0.00E+00 
-RO           4.79E+03    2.26E+05 
-CBE          1.05E-10    4.58E-11 
-CBC          5.61E-11    4.40E-12 
+RO           4.79E+03    3.55E+03 
+CBE          1.05E-10    1.27E-10 
+CBC          5.61E-11    7.05E-11 
 CJS          0.00E+00    0.00E+00 
-BETAAC       2.04E+02    1.60E+02 
+BETAAC       2.04E+02    2.11E+02 
 CBX/CBX2     0.00E+00    0.00E+00 
-FT/FT2       1.38E+08    5.31E+07 
+FT/FT2       1.38E+08    1.51E+08 
 
 
 
           JOB CONCLUDED
 
-**** 04/28/24 01:58:33 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 04/28/24 22:49:41 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-exp6_1"  [ c:\users\user\desktop\codespace\pspiceprj\exp6_1-pspicefiles\schematic1\exp6_1.sim ] 
 
