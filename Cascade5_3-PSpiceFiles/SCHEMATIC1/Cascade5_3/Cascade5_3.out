@@ -1,0 +1,155 @@
+
+**** 05/03/24 16:04:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Cascade5_3"  [ c:\users\user\desktop\codespace\pspiceprj\cascade5_3-pspicefiles\schematic1\cascade5_3.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Cascade5_3.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 5ms 0 1us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source CASCADE5_3
+Q_Q1         VO1 N00405 N00557 Q2N2222
+Q_Q2         VOUT N00645 N00858 Q2N2222
+V_VCC         N00515 0 10V
+C_Cc1         VO1 N00645  100uF  TC=0,0 
+C_CE1         0 N00557  100uF  TC=0,0 
+C_CE2         0 N00858  100uF  TC=0,0 
+R_R2         0 N00405  20k TC=0,0 
+C_C4         N00398 N00405  100uF  TC=0,0 
+R_Rs         VS N00398  0.1k TC=0,0 
+R_R1         N00405 N00515  80k TC=0,0 
+R_RC1         VO1 N00515  2k TC=0,0 
+R_RE1         0 N00557  1k TC=0,0 
+R_R3         N00645 N00515  85k TC=0,0 
+R_R4         0 N00645  15k TC=0,0 
+R_RC         VOUT N00515  4k TC=0,0 
+R_RE2         0 N00858  0.5k TC=0,0 
+V_V1         VS 0  
++SIN 0 0.1mV 1kHz 0 0 0
+
+**** RESUMING Cascade5_3.cir ****
+.END
+
+**** 05/03/24 16:04:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Cascade5_3"  [ c:\users\user\desktop\codespace\pspiceprj\cascade5_3-pspicefiles\schematic1\cascade5_3.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222         
+               NPN             
+       LEVEL    1            
+          IS   14.340000E-15 
+          BF  255.9          
+          NF    1            
+         VAF   74.03         
+         IKF     .2847       
+         ISE   14.340000E-15 
+          NE    1.307        
+          BR    6.092        
+          NR    1            
+         ISS    0            
+          RB   10            
+          RE    0            
+          RC    1            
+         CJE   22.010000E-12 
+         VJE     .75         
+         MJE     .377        
+         CJC    7.306000E-12 
+         VJC     .75         
+         MJC     .3416       
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  411.100000E-12 
+         XTF    3            
+         VTF    1.7          
+         ITF     .6          
+          TR   46.910000E-09 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 05/03/24 16:04:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Cascade5_3"  [ c:\users\user\desktop\codespace\pspiceprj\cascade5_3-pspicefiles\schematic1\cascade5_3.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VS)    0.0000  (  VO1)    7.5564  ( VOUT)    4.2071  (N00398)    0.0000     
+
+(N00405)    1.8786 (N00515)   10.0000 (N00557)    1.2294 (N00645)    1.3833     
+
+(N00858)     .7287 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VCC       -2.873E-03
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   2.87E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/03/24 16:04:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Cascade5_3"  [ c:\users\user\desktop\codespace\pspiceprj\cascade5_3-pspicefiles\schematic1\cascade5_3.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .22
+

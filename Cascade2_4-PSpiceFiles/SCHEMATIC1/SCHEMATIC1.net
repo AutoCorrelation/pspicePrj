@@ -1,0 +1,17 @@
+* source CASCADE2_4
+R_R4         0 N04103  70k TC=0,0 
+Q_Q2         N03983 N04103 VOUT Q2N2222
+V_V1         VS 0  
++SIN 0 5mV 1kHz 0 0 0
+V_VCC         N03983 0 10V
+R_R3         N04103 N03983  50k TC=0,0 
+R_Rs         VS N04191  0.1k TC=0,0 
+C_C4         N04191 N04099  100uF  TC=0,0 
+Q_Q1         VO1 N04099 N04273 Q2N2222
+C_CE1         0 N04273  100uF  TC=0,0 
+R_RC1         VO1 N03983  10k TC=0,0 
+R_RE2         0 VOUT  1.5k TC=0,0 
+R_RE1         0 N04273  1k TC=0,0 
+R_R2         0 N04099  100k TC=0,0 
+R_R1         N04099 N03983  600k TC=0,0 
+C_Cc1         VO1 N04103  100uF  TC=0,0 

@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-simulate7_2"  [ C:\Users\user\Desktop\Codespace\pspicePrj\simulate7-PSpiceFiles\SCHEMATIC1\simulate7_2.sim ] 
+
+** Creating circuit file "simulate7_2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 5ms 0 1us 
+.STEP PARAM RL LIST 1.0k, 1.5k, 2.0k, 2.4k, 3.0k, 3.6k, 4.3k 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

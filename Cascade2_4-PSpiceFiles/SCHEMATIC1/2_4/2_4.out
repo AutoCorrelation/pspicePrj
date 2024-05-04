@@ -1,0 +1,151 @@
+
+**** 05/03/24 15:52:03 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-2_4"  [ C:\Users\user\Desktop\Codespace\pspicePrj\Cascade2_4-PSpiceFiles\SCHEMATIC1\2_4.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "2_4.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 5ms 0 1us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source CASCADE2_4
+R_R4         0 N04103  70k TC=0,0 
+Q_Q2         N03983 N04103 VOUT Q2N2222
+V_V1         VS 0  
++SIN 0 5mV 1kHz 0 0 0
+V_VCC         N03983 0 10V
+R_R3         N04103 N03983  50k TC=0,0 
+R_Rs         VS N04191  0.1k TC=0,0 
+C_C4         N04191 N04099  100uF  TC=0,0 
+Q_Q1         VO1 N04099 N04273 Q2N2222
+C_CE1         0 N04273  100uF  TC=0,0 
+R_RC1         VO1 N03983  10k TC=0,0 
+R_RE2         0 VOUT  1.5k TC=0,0 
+R_RE1         0 N04273  1k TC=0,0 
+R_R2         0 N04099  100k TC=0,0 
+R_R1         N04099 N03983  600k TC=0,0 
+C_Cc1         VO1 N04103  100uF  TC=0,0 
+
+**** RESUMING 2_4.cir ****
+.END
+
+**** 05/03/24 15:52:03 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-2_4"  [ C:\Users\user\Desktop\Codespace\pspicePrj\Cascade2_4-PSpiceFiles\SCHEMATIC1\2_4.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222         
+               NPN             
+       LEVEL    1            
+          IS   14.340000E-15 
+          BF  255.9          
+          NF    1            
+         VAF   74.03         
+         IKF     .2847       
+         ISE   14.340000E-15 
+          NE    1.307        
+          BR    6.092        
+          NR    1            
+         ISS    0            
+          RB   10            
+          RE    0            
+          RC    1            
+         CJE   22.010000E-12 
+         VJE     .75         
+         MJE     .377        
+         CJC    7.306000E-12 
+         VJC     .75         
+         MJC     .3416       
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  411.100000E-12 
+         XTF    3            
+         VTF    1.7          
+         ITF     .6          
+          TR   46.910000E-09 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 05/03/24 15:52:03 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-2_4"  [ C:\Users\user\Desktop\Codespace\pspicePrj\Cascade2_4-PSpiceFiles\SCHEMATIC1\2_4.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VS)    0.0000  (  VO1)    4.9924  ( VOUT)    4.6388  (N03983)   10.0000     
+
+(N04099)    1.1309 (N04103)    5.3124 (N04191)    0.0000 (N04273)     .5042 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_VCC       -3.684E-03
+
+    TOTAL POWER DISSIPATION   3.68E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/03/24 15:52:03 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-2_4"  [ C:\Users\user\Desktop\Codespace\pspicePrj\Cascade2_4-PSpiceFiles\SCHEMATIC1\2_4.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .13
+

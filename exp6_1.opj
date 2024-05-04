@@ -50,30 +50,50 @@
          ".\exp6_1-pspicefiles\schematic1\bias.sim"
         (DisplayName "SCHEMATIC1-bias")
         (Type "PSpice Profile"))
-      (ActiveProfile ".\exp6_1-pspicefiles\schematic1\exp6_1.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\exp6_1-pspicefiles\schematic1\exp6_1.sim"
         (DisplayName "SCHEMATIC1-exp6_1")
-        (Type "PSpice Profile"))))
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\exp6_1-pspicefiles\schematic1\p176.sim"
+        (DisplayName "SCHEMATIC1-p176")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\exp6_1-pspicefiles\schematic1\p176.sim")))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
-    (Q2N4401
-      (FullPartName "Q2N4401.Normal")
+    (VDC
+      (FullPartName "VDC.Normal")
       (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
     (0
-      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (Q2N2222
+      (FullPartName "Q2N2222.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
       (DeviceIndex "0"))
     (R
       (FullPartName "R.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
-    (VDC
-      (FullPartName "VDC.Normal")
+    (VSIN
+      (FullPartName "VSIN.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (Q2N4401
+      (FullPartName "Q2N4401.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
       (DeviceIndex "0"))
     (QbreakN
       (FullPartName "QbreakN.Normal")
@@ -102,13 +122,12 @@
          "c:\users\user\desktop\codespace\pspiceprj\exp6_1.dsn")
       (Path "Design Resources"
          "c:\users\user\desktop\codespace\pspiceprj\exp6_1.dsn" "SCHEMATIC1")
-      (Path "Outputs")
-      (Select "Design Resources"))
+      (Path "Outputs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 150"))
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 150"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
@@ -123,10 +142,20 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 0 562 0 443")
+        (Placement "44 0 1 -1 -1 -8 -31 0 562 0 443")
         (Scroll "0 0")
         (Zoom "200")
         (Occurrence "/"))
       (Path "C:\USERS\USER\DESKTOP\CODESPACE\PSPICEPRJ\EXP6_1.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "PAGE2"))))
+      (Page "PAGE2"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 160 1684 104 556")
+        (Scroll "0 0")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path "C:\USERS\USER\DESKTOP\CODESPACE\PSPICEPRJ\EXP6_1.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "p176"))))

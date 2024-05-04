@@ -1,0 +1,19 @@
+* source CASCADE5_3
+Q_Q1         VO1 N00405 N00557 Q2N2222
+Q_Q2         VOUT N00645 N00858 Q2N2222
+V_VCC         N00515 0 10V
+C_Cc1         VO1 N00645  100uF  TC=0,0 
+C_CE1         0 N00557  100uF  TC=0,0 
+C_CE2         0 N00858  100uF  TC=0,0 
+R_R2         0 N00405  20k TC=0,0 
+C_C4         N00398 N00405  100uF  TC=0,0 
+R_Rs         VS N00398  0.1k TC=0,0 
+R_R1         N00405 N00515  80k TC=0,0 
+R_RC1         VO1 N00515  2k TC=0,0 
+R_RE1         0 N00557  1k TC=0,0 
+R_R3         N00645 N00515  85k TC=0,0 
+R_R4         0 N00645  15k TC=0,0 
+R_RC         VOUT N00515  4k TC=0,0 
+R_RE2         0 N00858  0.5k TC=0,0 
+V_V1         VS 0  
++SIN 0 0.1mV 1kHz 0 0 0
