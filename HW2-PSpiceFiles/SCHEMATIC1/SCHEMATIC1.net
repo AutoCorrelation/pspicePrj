@@ -1,0 +1,20 @@
+* source HW2
+R_R9         0 N23882  0.3k TC=0,0 
+R_R3         N23720 0  260k TC=0,0 
+V_V2         VIN 0  
++SIN 0 50mV 1k 0 0 0
+V_V3         0 N23500 8V
+C_C1         N23770 N23720  100uF  TC=0,0 
+R_R6         N23572 N23500  18k TC=0,0 
+C_C5         N23740 VOUT1  100uF  TC=0,0 
+R_R2         N23500 N23720  290k TC=0,0 
+R_R7         N23500 N23740  290k TC=0,0 
+M_M2         N23572 N23740 N23882 N23882 M2N6804
+R_R4         0 N30355  0.5k TC=0,0 
+R_R10         0 VOUT2  10k TC=0,0 
+R_R1         VIN N23770  1k TC=0,0 
+R_R11         N23500 VOUT1  1k TC=0,0 
+M_M3         VOUT1 N23720 N30355 N30355 M2N6804
+C_C6         VOUT2 N23572  100u  TC=0,0 
+R_R12         N23740 0  260k TC=0,0 
+C_C7         0 N23882  1n  TC=0,0 

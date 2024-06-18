@@ -1,0 +1,15 @@
+.ALIASES
+C_Cc2           Cc2(1=N02454 2=VOUT ) CN @C11.SCHEMATIC1(sch_1):INS2456@ANALOG.C.Normal(chips)
+R_R1            R1(1=N02474 2=VCC ) CN @C11.SCHEMATIC1(sch_1):INS2432@ANALOG.R.Normal(chips)
+R_RL            RL(1=0 2=VOUT ) CN @C11.SCHEMATIC1(sch_1):INS2606@ANALOG.R.Normal(chips)
+R_Rs            Rs(1=VIN 2=N02542 ) CN @C11.SCHEMATIC1(sch_1):INS2586@ANALOG.R.Normal(chips)
+C_Cc1           Cc1(1=N02542 2=N02474 ) CN @C11.SCHEMATIC1(sch_1):INS2498@ANALOG.C.Normal(chips)
+R_R2            R2(1=0 2=N02474 ) CN @C11.SCHEMATIC1(sch_1):INS2652@ANALOG.R.Normal(chips)
+V_VCC           VCC(+=VCC -=0 ) CN @C11.SCHEMATIC1(sch_1):INS2626@SOURCE.VDC.Normal(chips)
+R_RC            RC(1=N02454 2=VCC ) CN @C11.SCHEMATIC1(sch_1):INS2412@ANALOG.R.Normal(chips)
+V_Vs            Vs(+=VIN -=0 ) CN @C11.SCHEMATIC1(sch_1):INS2686@SOURCE.VSIN.Normal(chips)
+X_M1            M1(d=N02454 g=N02474 s=0 ) CN @C11.SCHEMATIC1(sch_1):INS2853@FAIRCHILD.2N7000/FAI.Normal(chips)
+_    _(VCC=VCC)
+_    _(vin=VIN)
+_    _(vout=VOUT)
+.ENDALIASES

@@ -1,7 +1,7 @@
 
-**** 05/05/24 00:41:51 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 05/05/24 21:00:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-simulate7_2"  [ C:\Users\user\Desktop\Codespace\pspicePrj\simulate7-PSpiceFiles\SCHEMATIC1\simulate7_2.sim ]
+ ** Profile: "SCHEMATIC1-simulate7_2"  [ c:\users\user\desktop\codespace\pspiceprj\simulate7-pspicefiles\schematic1\simulate7_2.sim ]
 
 
  ****     CIRCUIT DESCRIPTION
@@ -33,13 +33,13 @@
 **** INCLUDING SCHEMATIC1.net ****
 * source SIMULATE7
 C_Cc1         N00271 N00278  100uF  TC=0,0 
-C_Cc2         N00324 VOUT  100uF  TC=0,0 
+C_Cc2         VCE VOUT  100uF  TC=0,0 
 R_Rs         VS N00271  0.5k TC=0,0 
-R_R2         0 N00282  18k TC=0,0 
-R_R1         N00282 VCC  120k TC=0,0 
-R_RC         N00324 VCC  0.75k TC=0,0 
+R_R2         0 N00278  18k TC=0,0 
+R_R1         N00278 VCC  120k TC=0,0 
+R_RC         VCE VCC  0.75k TC=0,0 
 R_RL         0 VOUT  {RL} TC=0,0 
-Q_Q1         N00324 N00278 0 Q2N3904
+Q_Q1         VCE N00278 0 Q2N3904
 V_Vs         VS 0  
 +SIN 0 50mV 1kHz 0 0 0
 V_VCC         VCC 0 15V
@@ -48,9 +48,9 @@ V_VCC         VCC 0 15V
 **** RESUMING simulate7_2.cir ****
 .END
 
-**** 05/05/24 00:41:51 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 05/05/24 21:00:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-simulate7_2"  [ C:\Users\user\Desktop\Codespace\pspicePrj\simulate7-PSpiceFiles\SCHEMATIC1\simulate7_2.sim ]
+ ** Profile: "SCHEMATIC1-simulate7_2"  [ c:\users\user\desktop\codespace\pspiceprj\simulate7-pspicefiles\schematic1\simulate7_2.sim ]
 
 
  ****     BJT MODEL PARAMETERS
@@ -98,9 +98,9 @@ V_VCC         VCC 0 15V
            D     .87         
 
 
-**** 05/05/24 00:41:51 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 05/05/24 21:00:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-simulate7_2"  [ C:\Users\user\Desktop\Codespace\pspicePrj\simulate7-PSpiceFiles\SCHEMATIC1\simulate7_2.sim ]
+ ** Profile: "SCHEMATIC1-simulate7_2"  [ c:\users\user\desktop\codespace\pspiceprj\simulate7-pspicefiles\schematic1\simulate7_2.sim ]
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -115,9 +115,9 @@ V_VCC         VCC 0 15V
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(   VS)    0.0000  (  VCC)   15.0000  ( VOUT)    0.0000  (N00271)    0.0000     
+(   VS)    0.0000  (  VCC)   15.0000  (  VCE)    5.1331  ( VOUT)    0.0000      
 
-(N00278)     .2598 (N00282)    1.9565 (N00324)   15.0000 
+(N00271)    0.0000 (N00278)     .7357 
 
 
 
@@ -126,14 +126,14 @@ V_VCC         VCC 0 15V
     NAME         CURRENT
 
     V_Vs         0.000E+00
-    V_VCC       -1.087E-04
+    V_VCC       -1.327E-02
 
-    TOTAL POWER DISSIPATION   1.63E-03  WATTS
+    TOTAL POWER DISSIPATION   1.99E-01  WATTS
 
 
-**** 05/05/24 00:41:51 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 05/05/24 21:00:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-simulate7_2"  [ C:\Users\user\Desktop\Codespace\pspicePrj\simulate7-PSpiceFiles\SCHEMATIC1\simulate7_2.sim ]
+ ** Profile: "SCHEMATIC1-simulate7_2"  [ c:\users\user\desktop\codespace\pspiceprj\simulate7-pspicefiles\schematic1\simulate7_2.sim ]
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -148,9 +148,9 @@ V_VCC         VCC 0 15V
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(   VS)    0.0000  (  VCC)   15.0000  ( VOUT)    0.0000  (N00271)    0.0000     
+(   VS)    0.0000  (  VCC)   15.0000  (  VCE)    5.1331  ( VOUT)    0.0000      
 
-(N00278)     .2598 (N00282)    1.9565 (N00324)   15.0000 
+(N00271)    0.0000 (N00278)     .7357 
 
 
 
@@ -159,14 +159,14 @@ V_VCC         VCC 0 15V
     NAME         CURRENT
 
     V_Vs         0.000E+00
-    V_VCC       -1.087E-04
+    V_VCC       -1.327E-02
 
-    TOTAL POWER DISSIPATION   1.63E-03  WATTS
+    TOTAL POWER DISSIPATION   1.99E-01  WATTS
 
 
-**** 05/05/24 00:41:51 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 05/05/24 21:00:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-simulate7_2"  [ C:\Users\user\Desktop\Codespace\pspicePrj\simulate7-PSpiceFiles\SCHEMATIC1\simulate7_2.sim ]
+ ** Profile: "SCHEMATIC1-simulate7_2"  [ c:\users\user\desktop\codespace\pspiceprj\simulate7-pspicefiles\schematic1\simulate7_2.sim ]
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -181,9 +181,9 @@ V_VCC         VCC 0 15V
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(   VS)    0.0000  (  VCC)   15.0000  ( VOUT)    0.0000  (N00271)    0.0000     
+(   VS)    0.0000  (  VCC)   15.0000  (  VCE)    5.1331  ( VOUT)    0.0000      
 
-(N00278)     .2598 (N00282)    1.9565 (N00324)   15.0000 
+(N00271)    0.0000 (N00278)     .7357 
 
 
 
@@ -192,14 +192,14 @@ V_VCC         VCC 0 15V
     NAME         CURRENT
 
     V_Vs         0.000E+00
-    V_VCC       -1.087E-04
+    V_VCC       -1.327E-02
 
-    TOTAL POWER DISSIPATION   1.63E-03  WATTS
+    TOTAL POWER DISSIPATION   1.99E-01  WATTS
 
 
-**** 05/05/24 00:41:51 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 05/05/24 21:00:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-simulate7_2"  [ C:\Users\user\Desktop\Codespace\pspicePrj\simulate7-PSpiceFiles\SCHEMATIC1\simulate7_2.sim ]
+ ** Profile: "SCHEMATIC1-simulate7_2"  [ c:\users\user\desktop\codespace\pspiceprj\simulate7-pspicefiles\schematic1\simulate7_2.sim ]
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -214,9 +214,9 @@ V_VCC         VCC 0 15V
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(   VS)    0.0000  (  VCC)   15.0000  ( VOUT)    0.0000  (N00271)    0.0000     
+(   VS)    0.0000  (  VCC)   15.0000  (  VCE)    5.1331  ( VOUT)    0.0000      
 
-(N00278)     .2598 (N00282)    1.9565 (N00324)   15.0000 
+(N00271)    0.0000 (N00278)     .7357 
 
 
 
@@ -225,14 +225,14 @@ V_VCC         VCC 0 15V
     NAME         CURRENT
 
     V_Vs         0.000E+00
-    V_VCC       -1.087E-04
+    V_VCC       -1.327E-02
 
-    TOTAL POWER DISSIPATION   1.63E-03  WATTS
+    TOTAL POWER DISSIPATION   1.99E-01  WATTS
 
 
-**** 05/05/24 00:41:51 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 05/05/24 21:00:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-simulate7_2"  [ C:\Users\user\Desktop\Codespace\pspicePrj\simulate7-PSpiceFiles\SCHEMATIC1\simulate7_2.sim ]
+ ** Profile: "SCHEMATIC1-simulate7_2"  [ c:\users\user\desktop\codespace\pspiceprj\simulate7-pspicefiles\schematic1\simulate7_2.sim ]
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -247,9 +247,9 @@ V_VCC         VCC 0 15V
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(   VS)    0.0000  (  VCC)   15.0000  ( VOUT)    0.0000  (N00271)    0.0000     
+(   VS)    0.0000  (  VCC)   15.0000  (  VCE)    5.1331  ( VOUT)    0.0000      
 
-(N00278)     .2598 (N00282)    1.9565 (N00324)   15.0000 
+(N00271)    0.0000 (N00278)     .7357 
 
 
 
@@ -258,14 +258,14 @@ V_VCC         VCC 0 15V
     NAME         CURRENT
 
     V_Vs         0.000E+00
-    V_VCC       -1.087E-04
+    V_VCC       -1.327E-02
 
-    TOTAL POWER DISSIPATION   1.63E-03  WATTS
+    TOTAL POWER DISSIPATION   1.99E-01  WATTS
 
 
-**** 05/05/24 00:41:51 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 05/05/24 21:00:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-simulate7_2"  [ C:\Users\user\Desktop\Codespace\pspicePrj\simulate7-PSpiceFiles\SCHEMATIC1\simulate7_2.sim ]
+ ** Profile: "SCHEMATIC1-simulate7_2"  [ c:\users\user\desktop\codespace\pspiceprj\simulate7-pspicefiles\schematic1\simulate7_2.sim ]
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -280,9 +280,9 @@ V_VCC         VCC 0 15V
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(   VS)    0.0000  (  VCC)   15.0000  ( VOUT)    0.0000  (N00271)    0.0000     
+(   VS)    0.0000  (  VCC)   15.0000  (  VCE)    5.1331  ( VOUT)    0.0000      
 
-(N00278)     .2598 (N00282)    1.9565 (N00324)   15.0000 
+(N00271)    0.0000 (N00278)     .7357 
 
 
 
@@ -291,14 +291,14 @@ V_VCC         VCC 0 15V
     NAME         CURRENT
 
     V_Vs         0.000E+00
-    V_VCC       -1.087E-04
+    V_VCC       -1.327E-02
 
-    TOTAL POWER DISSIPATION   1.63E-03  WATTS
+    TOTAL POWER DISSIPATION   1.99E-01  WATTS
 
 
-**** 05/05/24 00:41:51 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 05/05/24 21:00:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-simulate7_2"  [ C:\Users\user\Desktop\Codespace\pspicePrj\simulate7-PSpiceFiles\SCHEMATIC1\simulate7_2.sim ]
+ ** Profile: "SCHEMATIC1-simulate7_2"  [ c:\users\user\desktop\codespace\pspiceprj\simulate7-pspicefiles\schematic1\simulate7_2.sim ]
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -313,9 +313,9 @@ V_VCC         VCC 0 15V
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(   VS)    0.0000  (  VCC)   15.0000  ( VOUT)    0.0000  (N00271)    0.0000     
+(   VS)    0.0000  (  VCC)   15.0000  (  VCE)    5.1331  ( VOUT)    0.0000      
 
-(N00278)     .2598 (N00282)    1.9565 (N00324)   15.0000 
+(N00271)    0.0000 (N00278)     .7357 
 
 
 
@@ -324,17 +324,17 @@ V_VCC         VCC 0 15V
     NAME         CURRENT
 
     V_Vs         0.000E+00
-    V_VCC       -1.087E-04
+    V_VCC       -1.327E-02
 
-    TOTAL POWER DISSIPATION   1.63E-03  WATTS
+    TOTAL POWER DISSIPATION   1.99E-01  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 05/05/24 00:41:51 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 05/05/24 21:00:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-simulate7_2"  [ C:\Users\user\Desktop\Codespace\pspicePrj\simulate7-PSpiceFiles\SCHEMATIC1\simulate7_2.sim ]
+ ** Profile: "SCHEMATIC1-simulate7_2"  [ c:\users\user\desktop\codespace\pspiceprj\simulate7-pspicefiles\schematic1\simulate7_2.sim ]
 
 
  ****     JOB STATISTICS SUMMARY
@@ -346,5 +346,5 @@ V_VCC         VCC 0 15V
 
 
 
-  Total job time (using Solver 1)   =         .81
+  Total job time (using Solver 1)   =        1.09
 

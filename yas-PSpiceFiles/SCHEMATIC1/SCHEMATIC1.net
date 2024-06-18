@@ -1,0 +1,7 @@
+* source YAS
+V_V3         0 N58810 8V
+R_R3         N58910 0  280k TC=0,0 
+R_R11         N58810 N58860  3k TC=0,0 
+R_R2         N58810 N58910  290k TC=0,0 
+R_R4         0 N58968  0.3k TC=0,0 
+M_M4         N58860 N58910 N58968 N58968 MbreakP           

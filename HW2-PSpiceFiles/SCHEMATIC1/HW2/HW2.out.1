@@ -1,0 +1,216 @@
+
+**** 06/17/24 18:12:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-HW2"  [ c:\users\user\desktop\codespace\pspiceprj\hw2-pspicefiles\schematic1\hw2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "HW2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 20m 0 10u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source HW2
+R_R9         0 N23882  0.3k TC=0,0 
+R_R3         N23720 0  280k TC=0,0 
+V_V2         VIN 0  
++SIN 0 50mV 1k 0 0 0
+V_V3         0 N23500 8V
+C_C1         N23770 N23720  100uF  TC=0,0 
+R_R6         N23572 N23500  20k TC=0,0 
+C_C5         N23740 VOUT1  100uF  TC=0,0 
+R_R2         N23500 N23720  290k TC=0,0 
+R_R7         N23500 N23740  290k TC=0,0 
+M_M2         N23572 N23740 N23882 N23882 M2N6804
+R_R4         0 N30355  0.3k TC=0,0 
+R_R10         0 VOUT2  10k TC=0,0 
+R_R1         VIN N23770  1k TC=0,0 
+R_R11         N23500 VOUT1  -.5k TC=0,0 
+M_M3         VOUT1 N23720 N30355 N30355 M2N6804
+C_C6         VOUT2 N23572  100u  TC=0,0 
+R_R12         N23740 0  260k TC=0,0 
+C_C7         0 N23882  1n  TC=0,0 
+
+**** RESUMING HW2.cir ****
+.END
+
+**** 06/17/24 18:12:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-HW2"  [ c:\users\user\desktop\codespace\pspiceprj\hw2-pspicefiles\schematic1\hw2.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               M2N6804         
+               PMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W    1.2          
+         VTO   -3.68         
+          KP   10.460000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD     .06652      
+          RS     .153        
+          RG    4.931        
+         RDS  444.400000E+06 
+          IS    5.477000E-12 
+          JS    0            
+           N    3            
+          PB     .8          
+        PBSW     .8          
+         CBD    1.281000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  295.000000E-09 
+        CGSO    1.798000E-09 
+        CGDO  134.900000E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+          UO  300            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 06/17/24 18:12:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-HW2"  [ c:\users\user\desktop\codespace\pspiceprj\hw2-pspicefiles\schematic1\hw2.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)    0.0000  (VOUT1)   -8.3899  (VOUT2)    0.0000  (N23500)   -8.0000     
+
+(N23572)   -1.8739 (N23720)   -3.9298 (N23740)   -3.7818 (N23770)    0.0000     
+
+(N23882)    -.0919 (N30355)    -.2339 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         0.000E+00
+    V_V3        -1.115E-03
+
+    TOTAL POWER DISSIPATION   8.92E-03  WATTS
+
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  31.96E-06.
+         Time step =  365.7E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N23720)                 =  -317.74MV  \   -1.088GV
+    V(N23770)                 =  -317.72MV  \   -1.088GV
+    V(N23572)                 =   -3.573GV  \   -3.580GV
+    V(N23740)                 =   -9.250GV  \   -10.00GV
+    V(VOUT1)                  =   -9.250GV  \   -10.00GV
+    V(N30355)                 =  -342.17MV  \   -1.092GV
+    V(VOUT2)                  =   -3.573GV  \   -3.580GV
+
+  These supply currents failed to converge:
+
+    I(V_V2)                   =  -317.72KA  \   -1.088MA
+    I(V_V3)                   =   -18.29MA  \   -19.78MA
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)     .0100  (VOUT1)-9.250E+09  (VOUT2)-3.573E+09  (N23500)   -8.0000     
+
+(N23572)-3.573E+09 (N23720)-317.7E+06 (N23740)-9.250E+09 (N23770)-317.7E+06     
+
+(N23882)-3.577E+09 (N30355)-342.2E+06 
+
+
+**** Interrupt ****
+
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  31.96E-06.
+         Time step =  731.5E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N23720)                 =  -317.74MV  \   -1.071GV
+    V(N23770)                 =  -317.72MV  \   -1.071GV
+    V(N23572)                 =   -3.573GV  \   -3.580GV
+    V(N23740)                 =   -9.250GV  \    -9.98GV
+    V(VOUT1)                  =   -9.250GV  \    -9.98GV
+    V(N30355)                 =  -342.17MV  \   -1.072GV
+    V(VOUT2)                  =   -3.573GV  \   -3.580GV
+
+  These supply currents failed to converge:
+
+    I(V_V2)                   =  -317.72KA  \   -1.071MA
+    I(V_V3)                   =   -18.29MA  \   -19.74MA
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)     .0100  (VOUT1)-9.250E+09  (VOUT2)-3.573E+09  (N23500)   -8.0000     
+
+(N23572)-3.573E+09 (N23720)-317.7E+06 (N23740)-9.250E+09 (N23770)-317.7E+06     
+
+(N23882)-3.577E+09 (N30355)-342.2E+06 
+
+
+**** Interrupt ****

@@ -1,0 +1,20 @@
+* source TEST
+C_C6         VOUT2 N57628  100u  TC=0,0 
+R_R6         N57628 N57542  5k TC=0,0 
+C_C1         N57892 N57834  100uF  TC=0,0 
+R_R2         N57542 N57834  290k TC=0,0 
+R_R1         VIN N57892  1k TC=0,0 
+R_R4         0 N58002  0.3k TC=0,0 
+R_R11         N57542 VOUT1  3k TC=0,0 
+R_R7         N57542 N57854  290k TC=0,0 
+C_C7         0 N58028  1n  TC=0,0 
+C_C5         N57854 VOUT1  100uF  TC=0,0 
+R_R9         0 N58028  0.3k TC=0,0 
+R_R10         0 VOUT2  10k TC=0,0 
+R_R3         N57834 0  280k TC=0,0 
+V_V3         0 N57542 8V
+M_M2         N57628 N57854 N58028 N58028 M2N6804
+V_V2         VIN 0  
++SIN 0 10mV 1k 0 0 0
+R_R12         N57854 0  280k TC=0,0 
+M_M3         VOUT1 N57834 N58002 N58002 M2N6804

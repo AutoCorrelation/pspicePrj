@@ -1,0 +1,183 @@
+
+**** 05/12/24 13:01:46 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\user\Desktop\Codespace\pspicePrj\simulate8_1-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OP
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SIMULATE8_1
+C_Cc1         N15325 N15257  100uF  TC=0,0 
+R_Rs         VS N15325  0.5k TC=0,0 
+R_R2         0 N15257  80k TC=0,0 
+Q_Q1         VCC N15257 N15805 Q2N3904
+V_VCC         VCC 0 15V
+V_Vs         VS 0  
++SIN 0 1V 1kHz 0 0 0
+R_R1         N15257 VCC  100k TC=0,0 
+R_RE         0 N15805  1k TC=0,0 
+.PARAM  rl=0.51k
+
+**** RESUMING bias.cir ****
+.END
+
+**** 05/12/24 13:01:46 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\user\Desktop\Codespace\pspicePrj\simulate8_1-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N3904         
+               NPN             
+       LEVEL    1            
+          IS    6.734000E-15 
+          BF  416.4          
+          NF    1            
+         VAF   74.03         
+         IKF     .06678      
+         ISE    6.734000E-15 
+          NE    1.259        
+          BR     .7371       
+          NR    1            
+         ISS    0            
+          RB   10            
+          RE    0            
+          RC    1            
+         CJE    4.493000E-12 
+         VJE     .75         
+         MJE     .2593       
+         CJC    3.638000E-12 
+         VJC     .75         
+         MJC     .3085       
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  301.200000E-12 
+         XTF    2            
+         VTF    4            
+         ITF     .4          
+          TR  239.500000E-09 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 05/12/24 13:01:46 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\user\Desktop\Codespace\pspicePrj\simulate8_1-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VS)    0.0000  (  VCC)   15.0000  (N15257)    5.4593 (N15325)    0.0000     
+
+(N15805)    4.7551 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VCC       -4.823E-03
+    V_Vs         0.000E+00
+
+    TOTAL POWER DISSIPATION   7.24E-02  WATTS
+
+
+**** 05/12/24 13:01:46 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\user\Desktop\Codespace\pspicePrj\simulate8_1-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         Q_Q1      
+MODEL        Q2N3904   
+IB           2.72E-05 
+IC           4.73E-03 
+VBE          7.04E-01 
+VBC         -9.54E+00 
+VCE          1.02E+01 
+BETADC       1.74E+02 
+GM           1.73E-01 
+RPI          1.09E+03 
+RX           1.00E+01 
+RO           1.77E+04 
+CBE          5.86E-11 
+CBC          1.62E-12 
+CJS          0.00E+00 
+BETAAC       1.88E+02 
+CBX/CBX2     0.00E+00 
+FT/FT2       4.56E+08 
+
+
+
+          JOB CONCLUDED
+
+**** 05/12/24 13:01:46 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\user\Desktop\Codespace\pspicePrj\simulate8_1-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

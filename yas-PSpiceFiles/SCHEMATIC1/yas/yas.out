@@ -1,0 +1,174 @@
+
+**** 06/18/24 00:33:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-yas"  [ c:\users\user\desktop\codespace\pspiceprj\yas-pspicefiles\schematic1\yas.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "yas.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OP
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source YAS
+V_V3         0 N58810 8V
+R_R3         N58910 0  280k TC=0,0 
+R_R11         N58810 N58860  3k TC=0,0 
+R_R2         N58810 N58910  290k TC=0,0 
+R_R4         0 N58968  0.3k TC=0,0 
+M_M4         N58860 N58910 N58968 N58968 MbreakP           
+
+**** RESUMING yas.cir ****
+.END
+
+**** 06/18/24 00:33:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-yas"  [ c:\users\user\desktop\codespace\pspiceprj\yas-pspicefiles\schematic1\yas.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MbreakP         
+               PMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    0            
+          KP   20.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 06/18/24 00:33:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-yas"  [ c:\users\user\desktop\codespace\pspiceprj\yas-pspicefiles\schematic1\yas.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N58810)   -8.0000 (N58860)   -7.5473 (N58910)   -3.9298 (N58968)    -.0453 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -1.649E-04
+
+    TOTAL POWER DISSIPATION   1.32E-03  WATTS
+
+
+**** 06/18/24 00:33:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-yas"  [ c:\users\user\desktop\codespace\pspiceprj\yas-pspicefiles\schematic1\yas.sim ] 
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** MOSFETS
+
+
+NAME         M_M4      
+MODEL        MbreakP   
+ID          -1.51E-04 
+VGS         -3.88E+00 
+VDS         -7.50E+00 
+VBS          0.00E+00 
+VTH          0.00E+00 
+VDSAT       -3.88E+00 
+Lin0/Sat1   -1.00E+00 
+if          -1.00E+00 
+ir          -1.00E+00 
+TAU         -1.00E+00 
+GM           7.77E-05 
+GDS          0.00E+00 
+GMB          0.00E+00 
+CBD          0.00E+00 
+CBS          0.00E+00 
+CGSOV        0.00E+00 
+CGDOV        0.00E+00 
+CGBOV        0.00E+00 
+CGS          0.00E+00 
+CGD          0.00E+00 
+CGB          0.00E+00 
+
+          JOB CONCLUDED
+
+**** 06/18/24 00:33:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-yas"  [ c:\users\user\desktop\codespace\pspiceprj\yas-pspicefiles\schematic1\yas.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

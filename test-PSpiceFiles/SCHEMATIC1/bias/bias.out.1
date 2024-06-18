@@ -1,0 +1,58 @@
+
+**** 06/17/24 19:34:30 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\users\user\desktop\codespace\pspiceprj\test-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 20m 0 10u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TEST
+M_M3         VOUT1 N51665 N51775 N51775 M2N6804
+R_R11         N51373 VOUT1  1.8k TC=0,0 
+V_V3         N51775 N51373 8V
+R_R2         N51373 N51665  320k TC=0,0 
+V_V2         VIN N51775  
++SIN 0 50mV 1k 0 0 0
+R_R3         N51665 N51775  330k TC=0,0 
+C_C1         N51723 N51665  100uF  TC=0,0 
+R_R1         VIN N51723  1k TC=0,0 
+
+**** RESUMING bias.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node VOUT1 is floating
+
+ERROR(ORPSIM-15142): Node N51665 is floating
+
+ERROR(ORPSIM-15142): Node N51775 is floating
+
+ERROR(ORPSIM-15142): Node N51373 is floating
+
+ERROR(ORPSIM-15142): Node VIN is floating
+
+ERROR(ORPSIM-15142): Node N51723 is floating
+

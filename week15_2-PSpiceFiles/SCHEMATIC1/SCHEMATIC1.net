@@ -1,0 +1,20 @@
+* source WEEK15_2
+R_R1         VIN N21885  1k TC=0,0 
+R_R2         N22204 N21891  1k TC=0,0 
+R_R3         N21891 0  1k TC=0,0 
+R_R4         0 N22063  1k TC=0,0 
+R_R5         VOUT1 N22204  1k TC=0,0 
+V_V2         VIN 0  
++SIN 0 50mV 1k 0 0 0
+C_C1         N21885 N21891  100uF  TC=0,0 
+C_C3         0 N22063  1mF  TC=0,0 
+M_M1         VOUT1 N21891 N22063 N22063 M2N6804
+V_V3         0 N22204 6V
+R_R6         VOUT2 N22204  1k TC=0,0 
+R_R9         0 N22495  1k TC=0,0 
+R_R7         N22204 N22463  1k TC=0,0 
+M_M2         VOUT2 N22463 N22495 N22495 M2N6804
+C_C4         0 N22495  1mF  TC=0,0 
+R_R8         N22463 0  1k TC=0,0 
+C_C5         N22463 VOUT1  100uF  TC=0,0 
+R_R10         0 VOUT2  0.6k TC=0,0 

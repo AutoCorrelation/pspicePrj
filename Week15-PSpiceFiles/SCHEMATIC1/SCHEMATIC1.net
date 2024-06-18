@@ -1,0 +1,18 @@
+* source WEEK15
+R_Rs         N16128 VIN  1k TC=0,0 
+R_R2         0 N15114  200k TC=0,0 
+V_VCC         N15040 0 12Vdc
+C_Cc1         N16128 N15114  100uF  TC=0,0 
+R_RC         VOUT1 N15040  5k TC=0,0 
+V_Vs         VIN 0  
++SIN 0 50mV 1kHz 0 0 0
+C_Cc2         VOUT1 N15128  100uF  TC=0,0 
+R_R1         N15114 N15040  750k TC=0,0 
+M_M1         VOUT1 N15114 N16468 N16468 M2N6660
+R_R3         0 N15128  200k TC=0,0 
+R_R4         N15128 N15040  750k TC=0,0 
+M_M2         VOUT2 N15128 N16773 N16773 M2N6660
+R_R5         VOUT2 N15040  5k TC=0,0 
+R_R6         0 N16773  0.5k TC=0,0 
+R_R7         0 N16468  0.5k TC=0,0 
+C_Cc3         0 N16773  100uF  TC=0,0 

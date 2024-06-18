@@ -18,11 +18,11 @@
          ".\simulate7-pspicefiles\schematic1\simulate_7.sim"
         (DisplayName "SCHEMATIC1-simulate_7")
         (Type "PSpice Profile"))
-      (ActiveProfile ".\simulate7-pspicefiles\schematic1\simulate7_2.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\simulate7-pspicefiles\schematic1\simulate7_2.sim"
         (DisplayName "SCHEMATIC1-simulate7_2")
-        (Type "PSpice Profile")))
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\simulate7-pspicefiles\schematic1\simulate7_2.sim"))
     (Folder "Model Libraries"
       (Sort User))
     (Folder "Stimulus Files"
@@ -32,6 +32,9 @@
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (MPSSessionName "user")
   (PartMRUSelector
+    (VCC_CIRCLE
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
     (VCC
       (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
@@ -83,7 +86,7 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 80 1604 52 504")
+        (Placement "44 0 1 -1 -1 -8 -31 80 1604 52 504")
         (Scroll "0 0")
         (Zoom "200")
         (Occurrence "/"))

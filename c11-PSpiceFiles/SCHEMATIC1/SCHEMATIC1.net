@@ -1,0 +1,13 @@
+* source C11
+C_Cc2         N02454 VOUT  100uF  TC=0,0 
+R_R1         N02474 VCC  820k TC=0,0 
+R_RL         0 VOUT  {RL} TC=0,0 
+R_Rs         VIN N02542  0.5k TC=0,0 
+C_Cc1         N02542 N02474  100uF  TC=0,0 
+R_R2         0 N02474  150k TC=0,0 
+V_VCC         VCC 0 15V
+R_RC         N02454 VCC  1.0k TC=0,0 
+V_Vs         VIN 0  
++SIN 0 50mV 1kHz 0 0 0
+X_M1         N02454 N02474 0 2N7000/FAI
+.PARAM  rl=1k

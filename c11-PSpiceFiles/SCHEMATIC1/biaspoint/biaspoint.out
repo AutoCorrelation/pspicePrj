@@ -1,0 +1,231 @@
+
+**** 05/30/24 10:21:37 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-biaspoint"  [ C:\Users\user\Desktop\Codespace\pspicePrj\c11-PSpiceFiles\SCHEMATIC1\biaspoint.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "biaspoint.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OP
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source C11
+C_Cc2         N02454 VOUT  100uF  TC=0,0 
+R_R1         N02474 VCC  820k TC=0,0 
+R_RL         0 VOUT  {RL} TC=0,0 
+R_Rs         VIN N02542  0.5k TC=0,0 
+C_Cc1         N02542 N02474  100uF  TC=0,0 
+R_R2         0 N02474  150k TC=0,0 
+V_VCC         VCC 0 15V
+R_RC         N02454 VCC  1.0k TC=0,0 
+V_Vs         VIN 0  
++SIN 0 50mV 1kHz 0 0 0
+X_M1         N02454 N02474 0 2N7000/FAI
+.PARAM  rl=1k
+
+**** RESUMING biaspoint.cir ****
+.END
+
+**** 05/30/24 10:21:37 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-biaspoint"  [ C:\Users\user\Desktop\Codespace\pspicePrj\c11-PSpiceFiles\SCHEMATIC1\biaspoint.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_M1.DDS        X_M1.DBODY      X_M1.DGD        
+          IS   10.000000E-15  140.000000E-15   10.000000E-15 
+          BV   60.0864                                       
+          RS                     .04                         
+          TT                  100.000000E-09                 
+         CJO   23.000000E-12                   85.000000E-12 
+          VJ     .8                              .12         
+           M     .36                             .53         
+
+
+**** 05/30/24 10:21:37 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-biaspoint"  [ C:\Users\user\Desktop\Codespace\pspicePrj\c11-PSpiceFiles\SCHEMATIC1\biaspoint.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_M1.DMOS       X_M1.INTER      
+               NMOS            NMOS            
+       LEVEL    3               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO    2.09328         0            
+          KP     .35           10            
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX  100.000000E-09    0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+        VMAX  220.000000E+03                 
+       THETA     .086                        
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 05/30/24 10:21:37 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-biaspoint"  [ C:\Users\user\Desktop\Codespace\pspicePrj\c11-PSpiceFiles\SCHEMATIC1\biaspoint.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)   15.0000  (  VIN)    0.0000  ( VOUT)    0.0000  (N02454)    4.5926     
+
+(N02474)    2.3480 (N02542)    0.0000 (X_M1.1)    2.3480 (X_M1.2)    4.5853     
+
+(X_M1.3) 104.1E-06 (X_M1.4)    4.5895 (X_M1.5)    0.0000 (X_M1.6)    2.3480     
+
+(X_M1.7)    4.5895 (X_M1.8)    6.8310 (X_M1.9)   -2.1350 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VCC       -1.042E-02
+    V_Vs         0.000E+00
+
+    TOTAL POWER DISSIPATION   1.56E-01  WATTS
+
+
+**** 05/30/24 10:21:37 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-biaspoint"  [ C:\Users\user\Desktop\Codespace\pspicePrj\c11-PSpiceFiles\SCHEMATIC1\biaspoint.sim ] 
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** VOLTAGE-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         X_M1.E2     X_M1.E3   
+V-SOURCE     4.483E+00  -4.483E+00
+I-SOURCE    -2.682E-14   0.000E+00
+
+
+**** DIODES
+
+
+NAME         X_M1.Dds    X_M1.Dbody  X_M1.Dgd  
+MODEL        X_M1.DDS    X_M1.DBODY  X_M1.DGD  
+ID          -4.60E-12   -4.73E-12   -2.25E-12 
+VD          -4.59E+00   -4.59E+00   -2.24E+00 
+REQ          1.00E+12    1.00E+12    1.00E+12 
+CAP          1.16E-11    1.00E-19    1.75E-11 
+
+
+**** MOSFETS
+
+
+NAME         X_M1.M1     X_M1.M2     X_M1.M3   
+MODEL        X_M1.DMOS   X_M1.INTER  X_M1.INTER
+ID           1.04E-02   -2.24E-07    2.25E-12 
+VGS          2.35E+00    4.48E+00   -4.48E+00 
+VDS          4.59E+00   -5.00E-09    2.24E+00 
+VBS          0.00E+00    0.00E+00    0.00E+00 
+VTH          2.09E+00    0.00E+00    0.00E+00 
+VDSAT        2.46E-01    4.48E+00    0.00E+00 
+Lin0/Sat1   -1.00E+00   -1.00E+00   -1.00E+00 
+if          -1.00E+00   -1.00E+00   -1.00E+00 
+ir          -1.00E+00   -1.00E+00   -1.00E+00 
+TAU         -1.00E+00   -1.00E+00   -1.00E+00 
+GM           7.82E-02    5.00E-08    0.00E+00 
+GDS          1.71E-04    4.48E+01    0.00E+00 
+GMB          0.00E+00    0.00E+00    0.00E+00 
+CBD          0.00E+00    0.00E+00    0.00E+00 
+CBS          0.00E+00    0.00E+00    0.00E+00 
+CGSOV        0.00E+00    0.00E+00    0.00E+00 
+CGDOV        0.00E+00    0.00E+00    0.00E+00 
+CGBOV        0.00E+00    0.00E+00    0.00E+00 
+CGS          2.30E-16    0.00E+00    0.00E+00 
+CGD          0.00E+00    0.00E+00    0.00E+00 
+CGB          0.00E+00    0.00E+00    0.00E+00 
+
+          JOB CONCLUDED
+
+**** 05/30/24 10:21:37 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-biaspoint"  [ C:\Users\user\Desktop\Codespace\pspicePrj\c11-PSpiceFiles\SCHEMATIC1\biaspoint.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

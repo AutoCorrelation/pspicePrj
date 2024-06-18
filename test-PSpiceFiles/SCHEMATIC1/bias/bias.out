@@ -1,0 +1,161 @@
+
+**** 06/18/24 01:42:47 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\users\user\desktop\codespace\pspiceprj\test-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 4m 0 10u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TEST
+C_C6         VOUT2 N57628  100u  TC=0,0 
+R_R6         N57628 N57542  5k TC=0,0 
+C_C1         N57892 N57834  100uF  TC=0,0 
+R_R2         N57542 N57834  290k TC=0,0 
+R_R1         VIN N57892  1k TC=0,0 
+R_R4         0 N58002  0.3k TC=0,0 
+R_R11         N57542 VOUT1  3k TC=0,0 
+R_R7         N57542 N57854  290k TC=0,0 
+C_C7         0 N58028  1n  TC=0,0 
+C_C5         N57854 VOUT1  100uF  TC=0,0 
+R_R9         0 N58028  0.3k TC=0,0 
+R_R10         0 VOUT2  10k TC=0,0 
+R_R3         N57834 0  280k TC=0,0 
+V_V3         0 N57542 8V
+M_M2         N57628 N57854 N58028 N58028 M2N6804
+V_V2         VIN 0  
++SIN 0 10mV 1k 0 0 0
+R_R12         N57854 0  280k TC=0,0 
+M_M3         VOUT1 N57834 N58002 N58002 M2N6804
+
+**** RESUMING bias.cir ****
+.END
+
+**** 06/18/24 01:42:47 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\users\user\desktop\codespace\pspiceprj\test-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               M2N6804         
+               PMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W    1.2          
+         VTO   -3.68         
+          KP   10.460000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD     .06652      
+          RS     .153        
+          RG    4.931        
+         RDS  444.400000E+06 
+          IS    5.477000E-12 
+          JS    0            
+           N    3            
+          PB     .8          
+        PBSW     .8          
+         CBD    1.281000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  295.000000E-09 
+        CGSO    1.798000E-09 
+        CGDO  134.900000E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+          UO  300            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 06/18/24 01:42:47 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\users\user\desktop\codespace\pspiceprj\test-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)    0.0000  (VOUT1)   -5.6606  (VOUT2)    0.0000  (N57542)   -8.0000     
+
+(N57628)   -4.1010 (N57834)   -3.9298 (N57854)   -3.9298 (N57892)    0.0000     
+
+(N58002)    -.2339 (N58028)    -.2339 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -1.588E-03
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   1.27E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 06/18/24 01:42:47 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\users\user\desktop\codespace\pspiceprj\test-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

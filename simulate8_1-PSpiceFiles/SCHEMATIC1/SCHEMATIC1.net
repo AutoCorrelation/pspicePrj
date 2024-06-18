@@ -1,0 +1,11 @@
+* source SIMULATE8_1
+C_Cc1         N15325 N15257  100uF  TC=0,0 
+R_Rs         VS N15325  0.5k TC=0,0 
+R_R2         0 N15257  80k TC=0,0 
+Q_Q1         VCC N15257 VOUT Q2N3904
+V_VCC         VCC 0 15V
+V_Vs         VS 0  
++SIN 0 1V 1kHz 0 0 0
+R_R1         N15257 VCC  100k TC=0,0 
+R_RE         0 VOUT  1k TC=0,0 
+.PARAM  rl=0.51k

@@ -1,0 +1,161 @@
+
+**** 06/17/24 20:51:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-HW2"  [ c:\users\user\desktop\codespace\pspiceprj\hw2-pspicefiles\schematic1\hw2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "HW2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 20m 0 10u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source HW2
+R_R9         0 N23882  0.3k TC=0,0 
+R_R3         N23720 0  260k TC=0,0 
+V_V2         VIN 0  
++SIN 0 50mV 1k 0 0 0
+V_V3         0 N23500 8V
+C_C1         N23770 N23720  100uF  TC=0,0 
+R_R6         N23572 N23500  18k TC=0,0 
+C_C5         N23740 VOUT1  100uF  TC=0,0 
+R_R2         N23500 N23720  290k TC=0,0 
+R_R7         N23500 N23740  290k TC=0,0 
+M_M2         N23572 N23740 N23882 N23882 M2N6804
+R_R4         0 N30355  0.5k TC=0,0 
+R_R10         0 VOUT2  10k TC=0,0 
+R_R1         VIN N23770  1k TC=0,0 
+R_R11         N23500 VOUT1  1k TC=0,0 
+M_M3         VOUT1 N23720 N30355 N30355 M2N6804
+C_C6         VOUT2 N23572  100u  TC=0,0 
+R_R12         N23740 0  260k TC=0,0 
+C_C7         0 N23882  1n  TC=0,0 
+
+**** RESUMING HW2.cir ****
+.END
+
+**** 06/17/24 20:51:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-HW2"  [ c:\users\user\desktop\codespace\pspiceprj\hw2-pspicefiles\schematic1\hw2.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               M2N6804         
+               PMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W    1.2          
+         VTO   -3.68         
+          KP   10.460000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD     .06652      
+          RS     .153        
+          RG    4.931        
+         RDS  444.400000E+06 
+          IS    5.477000E-12 
+          JS    0            
+           N    3            
+          PB     .8          
+        PBSW     .8          
+         CBD    1.281000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  295.000000E-09 
+        CGSO    1.798000E-09 
+        CGDO  134.900000E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+          UO  300            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 06/17/24 20:51:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-HW2"  [ c:\users\user\desktop\codespace\pspiceprj\hw2-pspicefiles\schematic1\hw2.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)    0.0000  (VOUT1)   -7.8119  (VOUT2)    0.0000  (N23500)   -8.0000     
+
+(N23572)   -2.4865 (N23720)   -3.7818 (N23740)   -3.7818 (N23770)    0.0000     
+
+(N23882)    -.0919 (N30355)    -.0940 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         0.000E+00
+    V_V3        -5.235E-04
+
+    TOTAL POWER DISSIPATION   4.19E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 06/17/24 20:51:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-HW2"  [ c:\users\user\desktop\codespace\pspiceprj\hw2-pspicefiles\schematic1\hw2.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .09
+

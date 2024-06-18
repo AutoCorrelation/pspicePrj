@@ -1,0 +1,7 @@
+* source C10
+R_R1         N14395 VDD  280k TC=0,0 
+R_R2         0 N14395  80k TC=0,0 
+R_RD         N14378 VDD  2k TC=0,0 
+X_M1         N14378 N14395 N14869 2N7000/FAI
+V_V1         VDD 0 15
+R_RD1         0 N14869  0.3k TC=0,0 
